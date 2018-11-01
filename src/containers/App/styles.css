@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content {
+  flex: 1;
+}
+
+.contentLeft {
+  /* border-right: 1px solid #BBB; */
+  /* padding-right: 2px; */
+}
+.contentRight {
+  /* padding-left: 2px; */
+  background-color: #BBB;
+}
+
+.image {
+  /* height: auto; */
+  height: 300px;
+  /* height: 100%; */
+  width: 100%;
+  object-fit: contain;
+}

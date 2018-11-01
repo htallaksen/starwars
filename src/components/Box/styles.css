@@ -1,0 +1,109 @@
+
+/* .container {
+  flex: 1;
+  padding: 20;
+  border: 1px solid #CCC;
+} */
+
+/* .box {
+  width: "100%";
+	display: "block";
+	position: "relative";
+	border-radius: "4px";
+	margin-bottom: "10px";
+	border: "1px solid #ccc"
+} */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 1px solid #CCC;
+  margin: 7px;
+  background-color: #EFEFEF;
+}
+
+.listHeader {
+  display: flex;
+  justify-content: space-between;
+  color: #D6184C;
+  /* background-color: #98F1A5; */
+  background-color: #D1F4D6;
+  outline: none;
+  cursor: pointer;
+  
+  /* &:hover {
+    color: #333;
+    color: #333;
+    background-color: green;
+  } */
+}
+.listHeader:hover {
+  background-color: lightgreen;
+}
+
+.title {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1em;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin-left: 15px;
+}
+
+.expandArrowWrapper {
+  padding: 15px;
+  outline: none;
+  display: flex;
+  width: 25px;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.expandArrow {
+  /* transition: all 0.1s linear; */
+  transition: all 0.2s linear;
+  color: blue;
+
+  &.expanded {
+    transform: rotate(90deg);
+  }
+}
+
+.arrowLeft {
+  width: 0; 
+  height: 0; 
+  border-right: 15px solid #D6184C;
+  border-bottom: 15px solid transparent;
+  border-top: 15px solid transparent;
+}
+
+.arrowDown {
+  width: 0; 
+  height: 0; 
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent; 
+  border-top: 15px solid #D6184C; 
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: nowrap; */
+  /* justify-content: space-around; */
+  align-items: center;
+  align-content: center;
+  /* background-color: rgba(83.52941176470588%,81.17647058823529%,71.37254901960785%,0.678); */
+  /* background-color: #FFE5C0; */
+  /* border-radius: 10px; */
+  /* margin: 7px; */
+  /* border: 1px solid #CCC; */
+  /* max-width: 700px; */
+  /* min-width: 570px; */
+  /* flex: 1; */
+  width: 100%;
+  /* height: 200px; */
+  /* padding: 2px; */
+}

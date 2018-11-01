@@ -1,0 +1,35 @@
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #bccbde;
+  border-radius: 10px;
+  margin: 10px;
+  max-width: 700px;
+  min-width: 570px;
+  flex: 1;
+  padding: 20px 50px;
+}
+
+.location {
+  font-size: 1.1rem;
+}
+
+.icon {
+  margin: 5px
+}
+
+.temperature {
+  margin: 5px
+}
+
+@media (max-width: 640px) {
+  .container {
+    min-width: 200px;
+    margin: 10px 0px;
+    flex-direction: column;
+    align-items: center;
+  }
+}
